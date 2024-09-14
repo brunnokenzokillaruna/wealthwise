@@ -1,0 +1,31 @@
+/* wealth-wise-frontend/src/assets/styles/auth.css */
+
+.auth-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-half, .right-half {
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .left-half {
+    background-image: url('/path/to/your/image.jpg');
+    background-size: cover;
+  }
+  
+  .right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auth-page.swap .left-half {
+    transform: translateX(100%);
+  }
+  
+  .auth-page.swap .right-half {
+    transform: translateX(-100%);
+  }
+  
